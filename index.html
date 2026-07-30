@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马来西亚政府 4 部门实时资讯监测</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 1000px; margin: auto; padding: 20px; background: #f4f6f9; }
+        h1 { color: #1a365d; border-left: 5px solid #3182ce; padding-left: 15px; }
+        .status-panel { background: #ebf8ff; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #bee3f8; }
+        .status-panel p { margin: 5px 0; color: #2b6cb0; font-size: 0.95em; }
+        .traffic-badge { display: inline-block; background: #2b6cb0; color: white; padding: 4px 10px; border-radius: 4px; font-weight: bold; margin-top: 5px; }
+        h2 { color: #2d3748; font-size: 1.4em; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-top: 30px; }
+        .dashboard-container { display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 25px; }
+        .speed-card { background: white; padding: 15px; border-radius: 8px; border-left: 4px solid #38b2ac; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex: 1; min-width: 200px; }
+        .speed-card .site-name { font-weight: bold; color: #2c5282; font-size: 0.95em; }
+        .speed-card .site-url a { font-size: 0.8em; color: #718096; text-decoration: none; word-break: break-all; }
+        .speed-card .time-cost { margin-top: 10px; font-size: 0.9em; color: #4a5568; }
+        .speed-card .time-cost span { font-weight: bold; color: #e53e3e; }
+        .card { background: white; padding: 18px; margin-bottom: 15px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #3182ce; }
+        .source { font-weight: bold; color: #2b6cb0; font-size: 0.9em; margin-bottom: 5px; }
+        .title { font-size: 1.1em; margin: 5px 0; font-weight: 600; }
+        .translated-title { background: #f0f7ff; padding: 8px; border-radius: 5px; color: #1a202c; font-weight: 500; margin: 8px 0; }
+        .summary { font-size: 0.9em; color: #4a5568; margin-top: 8px; line-height: 1.5; }
+        .translated-summary { font-size: 0.9em; color: #2d3748; background: #faf5ff; padding: 8px; border-radius: 5px; margin-top: 5px; line-height: 1.5; }
+        .time { font-size: 0.8em; color: #a0aec0; margin-top: 10px; }
+        a { color: #3182ce; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>📡 马来西亚政府 4 部门实时监测面板</h1>
+    <div class="status-panel">
+        <p>🕒 <strong>当前数据刷新时间：</strong>2026-07-30 12:18:15 MYT</p>
+        <p>📊 <strong>监测范围：</strong>最近 24 小时发布信息</p>
+        <div class="traffic-badge">
+            🚀 本轮系统总耗时: 65.96 秒 &nbsp;&nbsp;|&nbsp;&nbsp; ⛽ 本轮消耗流量: 316.70 MB
+        </div>
+    </div>
+    <h2>⚡ 各部门官网实时响应速度</h2>
+    <div class='dashboard-container'>
+        <div class="speed-card">
+            <div class="site-name">马来西亚交通部 (MOT)</div>
+            <div class="site-url"><a href="https://www.mot.gov.my" target="_blank">https://www.mot.gov.my</a></div>
+            <div class="time-cost">⏱️ 耗时: <span>65.96 秒</span></div>
+        </div>
+        
+        <div class="speed-card">
+            <div class="site-name">马来西亚总理府 (PMO)</div>
+            <div class="site-url"><a href="https://www.pmo.gov.my" target="_blank">https://www.pmo.gov.my</a></div>
+            <div class="time-cost">⏱️ 耗时: <span>56.29 秒</span></div>
+        </div>
+        
+        <div class="speed-card">
+            <div class="site-name">马来西亚外交部 (KLN)</div>
+            <div class="site-url"><a href="https://www.kln.gov.my" target="_blank">https://www.kln.gov.my</a></div>
+            <div class="time-cost">⏱️ 耗时: <span>29.16 秒</span></div>
+        </div>
+        
+        <div class="speed-card">
+            <div class="site-name">马来西亚旅游艺术文化部(MOTAC)</div>
+            <div class="site-url"><a href="https://www.motac.gov.my" target="_blank">https://www.motac.gov.my</a></div>
+            <div class="time-cost">⏱️ 耗时: <span>29.68 秒</span></div>
+        </div>
+        </div>
+    <h2>📰 部门最新动态 (21)</h2>
+    
+            <div class="card">
+                <div class="source">🏛️ 马来西亚交通部 (MOT)</div>
+                <div class="title">📝 原文标题: <a href="https://www.mot.gov.my/en/media/news" target="_blank">Ministry of Transport Malaysia</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 马来西亚交通部</div>
+                <div class="summary">📄 原文摘要: If the link does not end with.gov.my, exit the website immediately
+          even if it looks similar. Look for a lock (🔐) orhttps://as an added precaution.
+          If not present, do not share any sensitive information.</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 如果链接不是以.gov.my结尾，请立即退出该网站
+          即使看起来很相似。寻找锁 (🔐) 或 https:// 作为额外的预防措施。
+          如果不存在，请勿共享任何敏感信息。</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:18:14.386240+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚交通部 (MOT)</div>
+                <div class="title">📝 原文标题: <a href="https://www.mot.gov.my/en/media/parliament" target="_blank">Ministry of Transport Malaysia</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 马来西亚交通部</div>
+                <div class="summary">📄 原文摘要: If the link does not end with.gov.my, exit the website immediately
+          even if it looks similar. Look for a lock (🔐) orhttps://as an added precaution.
+          If not present, do not share any sensitive information. 22 Julai 2025​​​​ - 28 Ogos 2025</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 如果链接不是以.gov.my结尾，请立即退出该网站
+          即使看起来很相似。寻找锁 (🔐) 或 https:// 作为额外的预防措施。
+          如果不存在，请勿共享任何敏感信息。 22 居莱 2025​​​​ - 28 奥戈斯 2025</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:18:09.638506+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚总理府 (PMO)</div>
+                <div class="title">📝 原文标题: <a href="https://www.pmo.gov.my/media/?category=ucapanterkini" target="_blank">Media</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 媒体</div>
+                <div class="summary">📄 原文摘要: Blok Utama, Bangunan Perdana Putra,Pusat Pentadbiran Kerajaan Persekutuan,62502 PutrajayaMALAYSIA</div>
+                <div class="translated-summary">🇨🇳 译文摘要: Main Block, Perdana Putra Building, 联邦政府行政中心, 62502 Putrajaya马来西亚</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:18:04.571927+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚交通部 (MOT)</div>
+                <div class="title">📝 原文标题: <a href="https://www.mot.gov.my/en/Media/Publication/Open-Data" target="_blank">Ministry of Transport Malaysia</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 马来西亚交通部</div>
+                <div class="summary">📄 原文摘要: If the link does not end with.gov.my, exit the website immediately
+          even if it looks similar. Look for a lock (🔐) orhttps://as an added precaution.
+          If not present, do not share any sensitive information. Impl​ementation of Open Government Data aims to improve public services and enhancing transparency to access government data and informati​​on.​ It is also one of the global ...</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 如果链接不是以.gov.my结尾，请立即退出该网站
+          即使看起来很相似。寻找锁 (🔐) 或 https:// 作为额外的预防措施。
+          如果不存在，请勿共享任何敏感信息。实施开放政府数据旨在改善公共服务并提高获取政府数据和信息的透明度。这也是全球...</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:18:04.466527+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚总理府 (PMO)</div>
+                <div class="title">📝 原文标题: <a href="https://www.pmo.gov.my/ms/kategori/beritabahasamelayu/" target="_blank">Berita</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 消息</div>
+                <div class="summary">📄 原文摘要: Blok Utama, Bangunan Perdana Putra,Pusat Pentadbiran Kerajaan Persekutuan,62502 PutrajayaMALAYSIA</div>
+                <div class="translated-summary">🇨🇳 译文摘要: Main Block, Perdana Putra Building, 联邦政府行政中心, 62502 Putrajaya马来西亚</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:18:00.766782+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚交通部 (MOT)</div>
+                <div class="title">📝 原文标题: <a href="https://www.mot.gov.my/en/media/maps" target="_blank">Ministry of Transport Malaysia</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 马来西亚交通部</div>
+                <div class="summary">📄 原文摘要: If the link does not end with.gov.my, exit the website immediately
+          even if it looks similar. Look for a lock (🔐) orhttps://as an added precaution.
+          If not present, do not share any sensitive information.</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 如果链接不是以.gov.my结尾，请立即退出该网站
+          即使看起来很相似。寻找锁 (🔐) 或 https:// 作为额外的预防措施。
+          如果不存在，请勿共享任何敏感信息。</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:59.459411+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚总理府 (PMO)</div>
+                <div class="title">📝 原文标题: <a href="https://www.pmo.gov.my/media/?category=beritabahasamelayu" target="_blank">Media</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 媒体</div>
+                <div class="summary">📄 原文摘要: Blok Utama, Bangunan Perdana Putra,Pusat Pentadbiran Kerajaan Persekutuan,62502 PutrajayaMALAYSIA</div>
+                <div class="translated-summary">🇨🇳 译文摘要: Main Block, Perdana Putra Building, 联邦政府行政中心, 62502 Putrajaya马来西亚</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:57.095180+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚交通部 (MOT)</div>
+                <div class="title">📝 原文标题: <a href="https://www.mot.gov.my/en/media/infographics" target="_blank">Ministry of Transport Malaysia</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 马来西亚交通部</div>
+                <div class="summary">📄 原文摘要: If the link does not end with.gov.my, exit the website immediately
+          even if it looks similar. Look for a lock (🔐) orhttps://as an added precaution.
+          If not present, do not share any sensitive information.</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 如果链接不是以.gov.my结尾，请立即退出该网站
+          即使看起来很相似。寻找锁 (🔐) 或 https:// 作为额外的预防措施。
+          如果不存在，请勿共享任何敏感信息。</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:54.932732+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚总理府 (PMO)</div>
+                <div class="title">📝 原文标题: <a href="https://www.pmo.gov.my/media" target="_blank">Media</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 媒体</div>
+                <div class="summary">📄 原文摘要: Blok Utama, Bangunan Perdana Putra,Pusat Pentadbiran Kerajaan Persekutuan,62502 PutrajayaMALAYSIA</div>
+                <div class="translated-summary">🇨🇳 译文摘要: Main Block, Perdana Putra Building, 联邦政府行政中心, 62502 Putrajaya马来西亚</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:53.251663+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚交通部 (MOT)</div>
+                <div class="title">📝 原文标题: <a href="https://www.mot.gov.my/en/media/press" target="_blank">Ministry of Transport Malaysia</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 马来西亚交通部</div>
+                <div class="summary">📄 原文摘要: If the link does not end with.gov.my, exit the website immediately
+          even if it looks similar. Look for a lock (🔐) orhttps://as an added precaution.
+          If not present, do not share any sensitive information.</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 如果链接不是以.gov.my结尾，请立即退出该网站
+          即使看起来很相似。寻找锁 (🔐) 或 https:// 作为额外的预防措施。
+          如果不存在，请勿共享任何敏感信息。</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:49.937001+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚总理府 (PMO)</div>
+                <div class="title">📝 原文标题: <a href="https://www.pmo.gov.my/ms/beritabahasamelayu/mesyuarat-majlis-kebangsaan-bagi-hal-ehwal-agama-islam-malaysia-mki-kali-ke-74-yang-dipengerusikan-dymm-paduka-seri-sultan-perak-darul-ridzuan-sultan-nazrin-muizzuddin-shah-2/" target="_blank">Hubungi Kami</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 联系我们</div>
+                <div class="summary">📄 原文摘要: Blok Utama, Bangunan Perdana Putra,Pusat Pentadbiran Kerajaan Persekutuan,62502 PutrajayaMALAYSIA</div>
+                <div class="translated-summary">🇨🇳 译文摘要: Main Block, Perdana Putra Building, 联邦政府行政中心, 62502 Putrajaya马来西亚</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:47.521475+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚交通部 (MOT)</div>
+                <div class="title">📝 原文标题: <a href="https://www.mot.gov.my/en/media/videos" target="_blank">Ministry of Transport Malaysia</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 马来西亚交通部</div>
+                <div class="summary">📄 原文摘要: If the link does not end with.gov.my, exit the website immediately
+          even if it looks similar. Look for a lock (🔐) orhttps://as an added precaution.
+          If not present, do not share any sensitive information.</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 如果链接不是以.gov.my结尾，请立即退出该网站
+          即使看起来很相似。寻找锁 (🔐) 或 https:// 作为额外的预防措施。
+          如果不存在，请勿共享任何敏感信息。</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:45.781565+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚交通部 (MOT)</div>
+                <div class="title">📝 原文标题: <a href="https://www.mot.gov.my/en/media/publication" target="_blank">Ministry of Transport Malaysia</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 马来西亚交通部</div>
+                <div class="summary">📄 原文摘要: If the link does not end with.gov.my, exit the website immediately
+          even if it looks similar. Look for a lock (🔐) orhttps://as an added precaution.
+          If not present, do not share any sensitive information.</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 如果链接不是以.gov.my结尾，请立即退出该网站
+          即使看起来很相似。寻找锁 (🔐) 或 https:// 作为额外的预防措施。
+          如果不存在，请勿共享任何敏感信息。</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:41.080847+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚总理府 (PMO)</div>
+                <div class="title">📝 原文标题: <a href="https://www.pmo.gov.my/ms/beritabahasamelayu/pelancaran-kenderaan-elektrik-ev-perodua-2/" target="_blank">Hubungi Kami</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 联系我们</div>
+                <div class="summary">📄 原文摘要: KUALA LUMPUR, 1 Dis (Bernama) — Perusahaan Otomobil Kedua Sdn Bhd (Perodua) hari ini memperkenalkan kenderaan elektrik bateri (EV) pertamanya, QV-E berharga RM80,000 sebelum insurans dan tidak termasuk bateri, menandakan langkah penting dalam usaha pembuat kereta nasional itu membangunkan ekosistem EV yang mampan. Perdana Menteri Datuk Seri Anwar Ibrahim berkata QV-E, yang bermaksud ‘Quest for ...</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 吉隆坡，12 月 1 日（马新社）—Perusahaan Otomobil Kedua Sdn Bhd (Perodua) 今天推出了首款纯电动汽车 (EV)，QV-E 不含保险且不含电池，售价为 RM80,000，标志着这家国家汽车制造商在开发可持续电动汽车生态系统方面迈出了重要一步。首相拿督斯里安瓦尔易卜拉欣说QV-E，代表“追求......</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:39.392441+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚交通部 (MOT)</div>
+                <div class="title">📝 原文标题: <a href="https://www.mot.gov.my/en/media/annual-report" target="_blank">Ministry of Transport Malaysia</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 马来西亚交通部</div>
+                <div class="summary">📄 原文摘要: If the link does not end with.gov.my, exit the website immediately
+          even if it looks similar. Look for a lock (🔐) orhttps://as an added precaution.
+          If not present, do not share any sensitive information.</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 如果链接不是以.gov.my结尾，请立即退出该网站
+          即使看起来很相似。寻找锁 (🔐) 或 https:// 作为额外的预防措施。
+          如果不存在，请勿共享任何敏感信息。</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:37.070987+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚旅游艺术文化部(MOTAC)</div>
+                <div class="title">📝 原文标题: <a href="https://www.motac.gov.my/siaran-media/" target="_blank">Portal Rasmi</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 官方门户</div>
+                <div class="summary">📄 原文摘要: Kementerian Pelancongan, Seni dan Budaya Malaysia (MOTAC) telah berjaya menganjurkan Dialog Pelancongan ASEAN-China di Langkawi dari 22 hingga 23 Julai 2026 yang dirasmikan oleh Menteri Kenyataan ini memaklumkan mengenai maklum balas Kementerian Pelancongan, Seni dan Budaya (MOTAC) terhadap memorandum daripada sembilan persatuan pelancongan berhubung kesan kenaikan harga diesel kepada pengusaha...</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 马来西亚旅游、艺术与文化部（MOTAC）于2026年7月22日至23日在兰卡威成功举办了中国-东盟旅游对话，并由部长主持。本声明介绍了旅游、艺术和文化部（MOTAC）对九个旅游协会关于柴油价格上涨对运营商的影响的备忘录的回应......</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:35.903035+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚总理府 (PMO)</div>
+                <div class="title">📝 原文标题: <a href="https://www.pmo.gov.my/ms/beritabahasamelayu/pelancaran-kenderaan-elektrik-ev-perodua/" target="_blank">Hubungi Kami</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 联系我们</div>
+                <div class="summary">📄 原文摘要: Hari ini saya amat berbangga sebagai rakyat Malaysia menyaksikan kejayaan syarikat anak tempatan merealisasikan kewujudan Kenderaan Elektrik Pertama (EV) Perodua, yangdikenali sebagai QV-E. Pencapaian ini lahir daripada kepintaran, disiplin, kegigihan serta keyakinan para jurutera, saintis dan tenaga mahir tempatan lantas membuktikan bahawa bukan sahaja Perodua, tetapi Malaysia mampu mengangkat...</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 今天，作为一名马来西亚人，我非常自豪地见证一家当地子公司成功推出 Perodua 的首款电动汽车 (EV)，即 QV-E。这一成就源自当地工程师、科学家和技术工人的聪明才智、纪律、坚持和信心，从而证明不仅是 Perodua，而且马来西亚也有能力提升...</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:35.317457+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚外交部 (KLN)</div>
+                <div class="title">📝 原文标题: <a href="https://www.kln.gov.my/web/guest/publications" target="_blank">Publications</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 刊物</div>
+                <div class="summary">📄 原文摘要: Institute of Diplomacy and Foreign Relations (IDFR) Southeast Asia Regional Centre for Counter Terrorism (SEARCCT) Ministry of Foreign Affairs, Malaysia, Wisma Putra, No 1, Jalan Wisma Putra, Precinct 2, 62602 PUTRAJAYA</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 外交与对外关系研究所 (IDFR) 东南亚区域反恐中心 (SEARCCT) Ministry of Firefly, Malaysia, Wisma Putra, No 1, Jalan Wisma Putra, Precinct 2, 62602 PUTRAJAYA</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:32.096963+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚交通部 (MOT)</div>
+                <div class="title">📝 原文标题: <a href="https://www.mot.gov.my/en/media/announcement" target="_blank">Ministry of Transport Malaysia</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 马来西亚交通部</div>
+                <div class="summary">📄 原文摘要: If the link does not end with.gov.my, exit the website immediately
+          even if it looks similar. Look for a lock (🔐) orhttps://as an added precaution.
+          If not present, do not share any sensitive information.</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 如果链接不是以.gov.my结尾，请立即退出该网站
+          即使看起来很相似。寻找锁 (🔐) 或 https:// 作为额外的预防措施。
+          如果不存在，请勿共享任何敏感信息。</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:32.044207+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚总理府 (PMO)</div>
+                <div class="title">📝 原文标题: <a href="https://www.pmo.gov.my/ms/media/" target="_blank">Media</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 媒体</div>
+                <div class="summary">📄 原文摘要: Blok Utama, Bangunan Perdana Putra,Pusat Pentadbiran Kerajaan Persekutuan,62502 PutrajayaMALAYSIA</div>
+                <div class="translated-summary">🇨🇳 译文摘要: Main Block, Perdana Putra Building, 联邦政府行政中心, 62502 Putrajaya马来西亚</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:27.869326+00:00</div>
+            </div>
+            
+            <div class="card">
+                <div class="source">🏛️ 马来西亚外交部 (KLN)</div>
+                <div class="title">📝 原文标题: <a href="https://www.kln.gov.my/web/guest/mfa-news" target="_blank">MFA News</a></div>
+                <div class="translated-title">🇨🇳 译文标题: 外交部新闻</div>
+                <div class="summary">📄 原文摘要: Institute of Diplomacy and Foreign Relations (IDFR) Southeast Asia Regional Centre for Counter Terrorism (SEARCCT) Ministry of Foreign Affairs, Malaysia, Wisma Putra, No 1, Jalan Wisma Putra, Precinct 2, 62602 PUTRAJAYA</div>
+                <div class="translated-summary">🇨🇳 译文摘要: 外交与对外关系研究所 (IDFR) 东南亚区域反恐中心 (SEARCCT) Ministry of Firefly, Malaysia, Wisma Putra, No 1, Jalan Wisma Putra, Precinct 2, 62602 PUTRAJAYA</div>
+                <div class="time">🕒 发布时间: 2026-07-30T04:17:27.725685+00:00</div>
+            </div>
+            </body></html>
