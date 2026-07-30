@@ -29,7 +29,7 @@ jobs:
           pip install selenium beautifulsoup4 deep-translator psutil requests pyvirtualdisplay
 
       - name: Run Scraper Script
-        run: python monitor_malaysia.py
+        run: python malaysia_monitor.py
 
       - name: Commit and Push changes
         run: |
