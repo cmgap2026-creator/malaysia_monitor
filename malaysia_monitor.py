@@ -379,9 +379,11 @@ def main():
     return total_cost_time, total_traffic_mb
 
 if __name__ == "__main__":
-    # 🚨 已经为你剥离死循环，只跑一次！
-    total_time, total_traffic = main()
-    print(f"\n📊 运行报告：")
-    print(f"⏱️ 并发总耗时: {total_time:.2f} 秒")
-    print(f"⛽ 消耗总流量: {total_traffic:.2f} MB")
-    print("✅ 单轮抓取结束，等待 GitHub Actions 触发下一轮...")
+    # 🚨 把死循环加回来！让云端服务器像你本地电脑一样一直挂机跑！
+    while True:
+        total_time, total_traffic = main()
+        print(f"\n📊 运行报告：")
+        print(f"⏱️ 并发总耗时: {total_time:.2f} 秒")
+        print(f"⛽ 消耗总流量: {total_traffic:.2f} MB")
+        print("\n⏳ 5 分钟倒计时开始，休息完毕后将自动进入下一轮监测...")
+        time.sleep(300) # 强行等待 5 分钟")
